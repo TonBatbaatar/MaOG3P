@@ -1,0 +1,6 @@
+﻿if in0 < 1000:
+    res0 = "small"
+elif in0 >= 2000:
+    res0 = "large"
+else:
+    res0 = None

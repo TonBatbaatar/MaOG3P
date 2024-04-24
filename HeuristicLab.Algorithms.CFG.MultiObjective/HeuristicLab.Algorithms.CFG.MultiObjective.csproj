@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1201F58-D05F-460B-96EB-7E7D1B0E9F8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HeuristicLab.Algorithms.CFG.MultiObjective</RootNamespace>
+    <AssemblyName>HeuristicLab.Algorithms.CFG.MultiObjective</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\HeuristicLab\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HeuristicLab.Analysis-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Analysis-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.Collections-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Collections-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.Common-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Common-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.Core-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Core-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.Data-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Data-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.Encodings.SymbolicExpressionTreeEncoding-3.4, Version=3.4.0.0, Culture=neutral, PublicKeyToken=ba48961d6f65dcec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Encodings.SymbolicExpressionTreeEncoding-3.4.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.Operators-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Operators-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.Optimization-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Optimization-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.Optimization.Operators-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Optimization.Operators-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.Parameters-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Parameters-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.Persistence-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Persistence-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.PluginInfrastructure-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.PluginInfrastructure-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.Random-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Random-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="HeuristicLab.Selection-3.3">
+      <HintPath>..\..\HeuristicLab\bin\HeuristicLab.Selection-3.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\HeuristicLab\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CFGMultiObjectiveSelector.cs" />
+    <Compile Include="CFGParetoFrontAnalyzer.cs" />
+    <Compile Include="CFGSolutionCreator.cs" />
+    <Compile Include="CFGSorter.cs" />
+    <Compile Include="CFGTournamentSelector.cs" />
+    <Compile Include="CustomTreeNode.cs" />
+    <Compile Include="EliteSelectorWithInsertedSolution.cs" />
+    <Compile Include="GeneticAlgorithm.cs" />
+    <Compile Include="GeneticAlgorithmKeepInsertedSolutionMainLoop.cs" />
+    <Compile Include="GeneticAlgorithmMainLoop.cs" />
+    <Compile Include="GeneticAlgorithmKeepInsertedSolution.cs" />
+    <Compile Include="InitialGivenProgramCreator.cs" />
+    <Compile Include="MultiObjectiveAlgorithmMainLoop.cs" />
+    <Compile Include="MultiObjectiveAlgorithm.cs" />
+    <Compile Include="Plugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TournamentSelectorWithSolutionInsertion.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HeuristicLab.Problems.CFG.Python.MultiObjective\HeuristicLab.Problems.CFG.Python.MultiObjective.csproj">
+      <Project>{6a7a65a5-74cd-486a-9c50-cf568834ed18}</Project>
+      <Name>HeuristicLab.Problems.CFG.Python.MultiObjective</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HeuristicLab.Problems.CFG.Python\HeuristicLab.Problems.CFG.Python.csproj">
+      <Project>{CF97234D-9B43-405F-AFEA-DB13685B48EF}</Project>
+      <Name>HeuristicLab.Problems.CFG.Python</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HeuristicLab.Problems.CFG\HeuristicLab.Problems.CFG.csproj">
+      <Project>{0c90f665-57a1-4773-8c6e-28e73b8968bc}</Project>
+      <Name>HeuristicLab.Problems.CFG</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PSB1_Solution\code\ChatGPT\Checksum.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\CollatzNumbers.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\CompareStringLengths.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\CountOdds.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\Digits.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\DoubleLetters.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\EvenSquares.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\ForLoopIndex.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\Grade.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\LastIndexofZero.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\Median.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\MirrorImage.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\NegativeToZero.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\NumberIO.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\PigLatin.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\ReplaceSpacewithNewline.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\ScrabbleScore.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\Smallest.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\SmallOrLarge.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\StringLengthsBackwards.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\SumofSquares.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\SuperAnagrams.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\Syllables.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\VectorAverage.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\VectorsSummed.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\WallisPi.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\WordStats.txt" />
+    <Content Include="PSB1_Solution\code\ChatGPT\X-WordLines.txt" />
+    <Content Include="PSB1_Solution\code\Copilot\NumberIO.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\Digits.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\WallisPi.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\WordStats.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\ScrabbleScore.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\NegativeToZero.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\PigLatin.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\X-WordLines.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\VectorsSummed.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\SuperAnagrams.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\SumofSquares.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\MirrorImage.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\VectorAverage.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\LastIndexofZero.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\StringLengthsBackwards.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\CountOdds.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\Checksum.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\EvenSquares.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\Grade.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\Syllables.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\Median.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\Smallest.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\ReplaceSpacewithNewline.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\CollatzNumbers.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\DoubleLetters.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\CompareStringLengths.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\ForLoopIndex.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\NumberIO.txt" />
+    <Content Include="PSB1_Solution\json\ChatGPT\SmallOrLarge.txt" />
+    <Content Include="PSB1_Solution\json\Copilot\NumberIO.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

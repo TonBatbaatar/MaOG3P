@@ -1,0 +1,3 @@
+﻿res0 = in0.replace(" ", "\n")
+count = len([c for c in in0 if c != " "])
+res1 = count

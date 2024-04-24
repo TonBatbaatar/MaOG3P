@@ -1,0 +1,5 @@
+﻿if not in0:
+    res0 = 0.0
+else:
+    total = sum(in0)
+    res0 = round(total/len(in0), 4)

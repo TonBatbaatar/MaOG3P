@@ -1,0 +1,1 @@
+﻿res0 = sum([i*i for i in range(1, in0+1)])

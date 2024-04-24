@@ -1,0 +1,174 @@
+﻿{
+    "_type": "Module",
+    "body": [
+        {
+            "_type": "Assign",
+            "col_offset": 0,
+            "end_col_offset": 40,
+            "end_lineno": 1,
+            "lineno": 1,
+            "targets": [
+                {
+                    "_type": "Name",
+                    "col_offset": 0,
+                    "ctx": {
+                        "_type": "Store"
+                    },
+                    "end_col_offset": 4,
+                    "end_lineno": 1,
+                    "id": "res0",
+                    "lineno": 1
+                }
+            ],
+            "type_comment": null,
+            "value": {
+                "_type": "ListComp",
+                "col_offset": 7,
+                "elt": {
+                    "_type": "BinOp",
+                    "col_offset": 8,
+                    "end_col_offset": 13,
+                    "end_lineno": 1,
+                    "left": {
+                        "_type": "Name",
+                        "col_offset": 8,
+                        "ctx": {
+                            "_type": "Load"
+                        },
+                        "end_col_offset": 9,
+                        "end_lineno": 1,
+                        "id": "a",
+                        "lineno": 1
+                    },
+                    "lineno": 1,
+                    "op": {
+                        "_type": "Add"
+                    },
+                    "right": {
+                        "_type": "Name",
+                        "col_offset": 12,
+                        "ctx": {
+                            "_type": "Load"
+                        },
+                        "end_col_offset": 13,
+                        "end_lineno": 1,
+                        "id": "b",
+                        "lineno": 1
+                    }
+                },
+                "end_col_offset": 40,
+                "end_lineno": 1,
+                "generators": [
+                    {
+                        "_type": "comprehension",
+                        "ifs": [],
+                        "is_async": 0,
+                        "iter": {
+                            "_type": "Call",
+                            "args": [
+                                {
+                                    "_type": "Name",
+                                    "col_offset": 30,
+                                    "ctx": {
+                                        "_type": "Load"
+                                    },
+                                    "end_col_offset": 33,
+                                    "end_lineno": 1,
+                                    "id": "in0",
+                                    "lineno": 1
+                                },
+                                {
+                                    "_type": "Name",
+                                    "col_offset": 35,
+                                    "ctx": {
+                                        "_type": "Load"
+                                    },
+                                    "end_col_offset": 38,
+                                    "end_lineno": 1,
+                                    "id": "in1",
+                                    "lineno": 1
+                                }
+                            ],
+                            "col_offset": 26,
+                            "end_col_offset": 39,
+                            "end_lineno": 1,
+                            "func": {
+                                "_type": "Name",
+                                "col_offset": 26,
+                                "ctx": {
+                                    "_type": "Load"
+                                },
+                                "end_col_offset": 29,
+                                "end_lineno": 1,
+                                "id": "zip",
+                                "lineno": 1
+                            },
+                            "keywords": [],
+                            "lineno": 1
+                        },
+                        "target": {
+                            "_type": "Tuple",
+                            "col_offset": 18,
+                            "ctx": {
+                                "_type": "Store"
+                            },
+                            "dims": [
+                                {
+                                    "_type": "Name",
+                                    "col_offset": 18,
+                                    "ctx": {
+                                        "_type": "Store"
+                                    },
+                                    "end_col_offset": 19,
+                                    "end_lineno": 1,
+                                    "id": "a",
+                                    "lineno": 1
+                                },
+                                {
+                                    "_type": "Name",
+                                    "col_offset": 21,
+                                    "ctx": {
+                                        "_type": "Store"
+                                    },
+                                    "end_col_offset": 22,
+                                    "end_lineno": 1,
+                                    "id": "b",
+                                    "lineno": 1
+                                }
+                            ],
+                            "elts": [
+                                {
+                                    "_type": "Name",
+                                    "col_offset": 18,
+                                    "ctx": {
+                                        "_type": "Store"
+                                    },
+                                    "end_col_offset": 19,
+                                    "end_lineno": 1,
+                                    "id": "a",
+                                    "lineno": 1
+                                },
+                                {
+                                    "_type": "Name",
+                                    "col_offset": 21,
+                                    "ctx": {
+                                        "_type": "Store"
+                                    },
+                                    "end_col_offset": 22,
+                                    "end_lineno": 1,
+                                    "id": "b",
+                                    "lineno": 1
+                                }
+                            ],
+                            "end_col_offset": 22,
+                            "end_lineno": 1,
+                            "lineno": 1
+                        }
+                    }
+                ],
+                "lineno": 1
+            }
+        }
+    ],
+    "type_ignores": []
+}

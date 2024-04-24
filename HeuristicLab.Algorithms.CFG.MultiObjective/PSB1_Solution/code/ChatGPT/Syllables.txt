@@ -1,0 +1,6 @@
+﻿vowels = "aeiouy"
+count = 0
+for char in in0:
+    if char in vowels:
+        count += 1
+res0 = count

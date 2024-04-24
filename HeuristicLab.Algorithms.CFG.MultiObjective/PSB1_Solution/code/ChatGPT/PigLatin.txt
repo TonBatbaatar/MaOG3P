@@ -1,0 +1,24 @@
+﻿first_word = True
+vowels = "aeiou"
+for char in in0:
+    if char != " ":
+        current_word += char
+    else:
+        if first_word:
+            first_word = False
+        else:
+            res0 += " "
+        if current_word[0] in vowels:
+            res0 += current_word + "ay"
+        else:
+            res0 += current_word[1:] + current_word[0] + "ay"
+        current_word = ""
+if current_word:
+    if first_word:
+        first_word = False
+    else:
+        res0 += " "
+    if current_word[0] in vowels:
+        res0 += current_word + "ay"
+    else:
+        res0 += current_word[1:] + current_word[0] + "ay"

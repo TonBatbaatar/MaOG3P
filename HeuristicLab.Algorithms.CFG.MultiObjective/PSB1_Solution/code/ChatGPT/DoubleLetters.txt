@@ -1,0 +1,8 @@
+﻿res0 = ""
+for c in in0:
+    if c.isalpha():
+        res0 += c * 2
+    elif c == "!":
+        res0 += c * 3
+    else:
+        res0 += c

@@ -1,0 +1,10 @@
+﻿if in4 >= in0:
+    res0 = "A"
+elif in4 >= in1:
+    res0 = "B"
+elif in4 >= in2:
+    res0 = "C"
+elif in4 >= in3:
+    res0 = "D"
+else:
+    res0 = "F"

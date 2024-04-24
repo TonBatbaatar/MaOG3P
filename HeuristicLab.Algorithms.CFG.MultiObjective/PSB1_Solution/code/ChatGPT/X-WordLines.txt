@@ -1,0 +1,12 @@
+﻿word_count = 0
+for char in in0:
+    if char != " " and char != "\n":
+        res0 += char
+        word_count += 1
+        if word_count == in1:
+            res0 += "\n"
+            word_count = 0
+        else:
+            res0 += " "
+if res0 and word_count > 0:
+    res0 += "\n"

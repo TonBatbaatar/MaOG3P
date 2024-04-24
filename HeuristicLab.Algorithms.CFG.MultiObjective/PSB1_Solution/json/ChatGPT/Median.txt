@@ -1,0 +1,348 @@
+﻿{
+    "_type": "Module",
+    "body": [
+        {
+            "_type": "If",
+            "body": [
+                {
+                    "_type": "Assign",
+                    "col_offset": 4,
+                    "end_col_offset": 14,
+                    "end_lineno": 2,
+                    "lineno": 2,
+                    "targets": [
+                        {
+                            "_type": "Name",
+                            "col_offset": 4,
+                            "ctx": {
+                                "_type": "Store"
+                            },
+                            "end_col_offset": 8,
+                            "end_lineno": 2,
+                            "id": "res0",
+                            "lineno": 2
+                        }
+                    ],
+                    "type_comment": null,
+                    "value": {
+                        "_type": "Name",
+                        "col_offset": 11,
+                        "ctx": {
+                            "_type": "Load"
+                        },
+                        "end_col_offset": 14,
+                        "end_lineno": 2,
+                        "id": "in1",
+                        "lineno": 2
+                    }
+                }
+            ],
+            "col_offset": 0,
+            "end_col_offset": 14,
+            "end_lineno": 6,
+            "lineno": 1,
+            "orelse": [
+                {
+                    "_type": "If",
+                    "body": [
+                        {
+                            "_type": "Assign",
+                            "col_offset": 4,
+                            "end_col_offset": 14,
+                            "end_lineno": 4,
+                            "lineno": 4,
+                            "targets": [
+                                {
+                                    "_type": "Name",
+                                    "col_offset": 4,
+                                    "ctx": {
+                                        "_type": "Store"
+                                    },
+                                    "end_col_offset": 8,
+                                    "end_lineno": 4,
+                                    "id": "res0",
+                                    "lineno": 4
+                                }
+                            ],
+                            "type_comment": null,
+                            "value": {
+                                "_type": "Name",
+                                "col_offset": 11,
+                                "ctx": {
+                                    "_type": "Load"
+                                },
+                                "end_col_offset": 14,
+                                "end_lineno": 4,
+                                "id": "in0",
+                                "lineno": 4
+                            }
+                        }
+                    ],
+                    "col_offset": 0,
+                    "end_col_offset": 14,
+                    "end_lineno": 6,
+                    "lineno": 3,
+                    "orelse": [
+                        {
+                            "_type": "Assign",
+                            "col_offset": 4,
+                            "end_col_offset": 14,
+                            "end_lineno": 6,
+                            "lineno": 6,
+                            "targets": [
+                                {
+                                    "_type": "Name",
+                                    "col_offset": 4,
+                                    "ctx": {
+                                        "_type": "Store"
+                                    },
+                                    "end_col_offset": 8,
+                                    "end_lineno": 6,
+                                    "id": "res0",
+                                    "lineno": 6
+                                }
+                            ],
+                            "type_comment": null,
+                            "value": {
+                                "_type": "Name",
+                                "col_offset": 11,
+                                "ctx": {
+                                    "_type": "Load"
+                                },
+                                "end_col_offset": 14,
+                                "end_lineno": 6,
+                                "id": "in2",
+                                "lineno": 6
+                            }
+                        }
+                    ],
+                    "test": {
+                        "_type": "BoolOp",
+                        "col_offset": 5,
+                        "end_col_offset": 43,
+                        "end_lineno": 3,
+                        "lineno": 3,
+                        "op": {
+                            "_type": "Or"
+                        },
+                        "values": [
+                            {
+                                "_type": "Compare",
+                                "col_offset": 5,
+                                "comparators": [
+                                    {
+                                        "_type": "Name",
+                                        "col_offset": 12,
+                                        "ctx": {
+                                            "_type": "Load"
+                                        },
+                                        "end_col_offset": 15,
+                                        "end_lineno": 3,
+                                        "id": "in0",
+                                        "lineno": 3
+                                    },
+                                    {
+                                        "_type": "Name",
+                                        "col_offset": 19,
+                                        "ctx": {
+                                            "_type": "Load"
+                                        },
+                                        "end_col_offset": 22,
+                                        "end_lineno": 3,
+                                        "id": "in2",
+                                        "lineno": 3
+                                    }
+                                ],
+                                "end_col_offset": 22,
+                                "end_lineno": 3,
+                                "left": {
+                                    "_type": "Name",
+                                    "col_offset": 5,
+                                    "ctx": {
+                                        "_type": "Load"
+                                    },
+                                    "end_col_offset": 8,
+                                    "end_lineno": 3,
+                                    "id": "in1",
+                                    "lineno": 3
+                                },
+                                "lineno": 3,
+                                "ops": [
+                                    {
+                                        "_type": "LtE"
+                                    },
+                                    {
+                                        "_type": "LtE"
+                                    }
+                                ]
+                            },
+                            {
+                                "_type": "Compare",
+                                "col_offset": 26,
+                                "comparators": [
+                                    {
+                                        "_type": "Name",
+                                        "col_offset": 33,
+                                        "ctx": {
+                                            "_type": "Load"
+                                        },
+                                        "end_col_offset": 36,
+                                        "end_lineno": 3,
+                                        "id": "in0",
+                                        "lineno": 3
+                                    },
+                                    {
+                                        "_type": "Name",
+                                        "col_offset": 40,
+                                        "ctx": {
+                                            "_type": "Load"
+                                        },
+                                        "end_col_offset": 43,
+                                        "end_lineno": 3,
+                                        "id": "in1",
+                                        "lineno": 3
+                                    }
+                                ],
+                                "end_col_offset": 43,
+                                "end_lineno": 3,
+                                "left": {
+                                    "_type": "Name",
+                                    "col_offset": 26,
+                                    "ctx": {
+                                        "_type": "Load"
+                                    },
+                                    "end_col_offset": 29,
+                                    "end_lineno": 3,
+                                    "id": "in2",
+                                    "lineno": 3
+                                },
+                                "lineno": 3,
+                                "ops": [
+                                    {
+                                        "_type": "LtE"
+                                    },
+                                    {
+                                        "_type": "LtE"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ],
+            "test": {
+                "_type": "BoolOp",
+                "col_offset": 3,
+                "end_col_offset": 41,
+                "end_lineno": 1,
+                "lineno": 1,
+                "op": {
+                    "_type": "Or"
+                },
+                "values": [
+                    {
+                        "_type": "Compare",
+                        "col_offset": 3,
+                        "comparators": [
+                            {
+                                "_type": "Name",
+                                "col_offset": 10,
+                                "ctx": {
+                                    "_type": "Load"
+                                },
+                                "end_col_offset": 13,
+                                "end_lineno": 1,
+                                "id": "in1",
+                                "lineno": 1
+                            },
+                            {
+                                "_type": "Name",
+                                "col_offset": 17,
+                                "ctx": {
+                                    "_type": "Load"
+                                },
+                                "end_col_offset": 20,
+                                "end_lineno": 1,
+                                "id": "in2",
+                                "lineno": 1
+                            }
+                        ],
+                        "end_col_offset": 20,
+                        "end_lineno": 1,
+                        "left": {
+                            "_type": "Name",
+                            "col_offset": 3,
+                            "ctx": {
+                                "_type": "Load"
+                            },
+                            "end_col_offset": 6,
+                            "end_lineno": 1,
+                            "id": "in0",
+                            "lineno": 1
+                        },
+                        "lineno": 1,
+                        "ops": [
+                            {
+                                "_type": "LtE"
+                            },
+                            {
+                                "_type": "LtE"
+                            }
+                        ]
+                    },
+                    {
+                        "_type": "Compare",
+                        "col_offset": 24,
+                        "comparators": [
+                            {
+                                "_type": "Name",
+                                "col_offset": 31,
+                                "ctx": {
+                                    "_type": "Load"
+                                },
+                                "end_col_offset": 34,
+                                "end_lineno": 1,
+                                "id": "in1",
+                                "lineno": 1
+                            },
+                            {
+                                "_type": "Name",
+                                "col_offset": 38,
+                                "ctx": {
+                                    "_type": "Load"
+                                },
+                                "end_col_offset": 41,
+                                "end_lineno": 1,
+                                "id": "in0",
+                                "lineno": 1
+                            }
+                        ],
+                        "end_col_offset": 41,
+                        "end_lineno": 1,
+                        "left": {
+                            "_type": "Name",
+                            "col_offset": 24,
+                            "ctx": {
+                                "_type": "Load"
+                            },
+                            "end_col_offset": 27,
+                            "end_lineno": 1,
+                            "id": "in2",
+                            "lineno": 1
+                        },
+                        "lineno": 1,
+                        "ops": [
+                            {
+                                "_type": "LtE"
+                            },
+                            {
+                                "_type": "LtE"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "type_ignores": []
+}

@@ -1,0 +1,7 @@
+﻿def check_reverse(in0, in1):
+    if len(in0) != len(in1):
+        return False
+    for i in range(len(in0)):
+        if in0[i] != in1[len(in1)-1-i]:
+            return False
+    return True

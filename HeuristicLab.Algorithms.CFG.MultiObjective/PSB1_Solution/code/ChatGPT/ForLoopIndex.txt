@@ -1,0 +1,5 @@
+﻿res0 = []
+n = in0
+while n < in1:
+    res0.append(n)
+    n += in2

@@ -1,0 +1,3 @@
+﻿ascii_sum = sum(ord(c) for c in in0)
+checksum_int = (ascii_sum % 64) + ord(" ")
+res0 = chr(checksum_int)

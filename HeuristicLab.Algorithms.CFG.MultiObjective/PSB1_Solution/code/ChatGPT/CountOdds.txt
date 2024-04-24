@@ -1,0 +1,4 @@
+﻿res0 = 0
+for num in in0:
+    if num % 2 != 0:
+        res0 += 1

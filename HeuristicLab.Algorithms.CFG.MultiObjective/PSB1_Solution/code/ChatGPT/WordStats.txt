@@ -1,0 +1,11 @@
+﻿words = in0.split()
+word_lengths = [len(word) for word in words]
+max_word_length = max(word_lengths)
+word_counts = [0] * max_word_length
+for length in word_lengths:
+    word_counts[length - 1] += 1
+sentence_count = sum(in0.count(c) for c in ".!?")
+avg_sentence_length = len(words) / sentence_count
+res0 = word_counts
+res1 = sentence_count
+res2 = avg_sentence_length

@@ -1,0 +1,1 @@
+﻿res0 = min(in0, in1, in2, in3)

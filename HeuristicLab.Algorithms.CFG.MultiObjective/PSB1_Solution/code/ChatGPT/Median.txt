@@ -1,0 +1,6 @@
+﻿if in0 <= in1 <= in2 or in2 <= in1 <= in0:
+    res0 = in1
+elif in1 <= in0 <= in2 or in2 <= in0 <= in1:
+    res0 = in0
+else:
+    res0 = in2

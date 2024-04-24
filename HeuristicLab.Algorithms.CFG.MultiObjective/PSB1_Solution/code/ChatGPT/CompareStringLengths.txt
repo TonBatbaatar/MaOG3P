@@ -1,0 +1,4 @@
+﻿if len(in0) < len(in1) < len(in2):
+    res0 = True
+else:
+    res0 = False

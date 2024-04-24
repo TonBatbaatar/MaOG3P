@@ -1,0 +1,116 @@
+﻿{
+    "_type": "Module",
+    "body": [
+        {
+            "_type": "Assign",
+            "col_offset": 0,
+            "end_col_offset": 38,
+            "end_lineno": 1,
+            "lineno": 1,
+            "targets": [
+                {
+                    "_type": "Name",
+                    "col_offset": 0,
+                    "ctx": {
+                        "_type": "Store"
+                    },
+                    "end_col_offset": 4,
+                    "end_lineno": 1,
+                    "id": "res0",
+                    "lineno": 1
+                }
+            ],
+            "type_comment": null,
+            "value": {
+                "_type": "ListComp",
+                "col_offset": 7,
+                "elt": {
+                    "_type": "Call",
+                    "args": [
+                        {
+                            "_type": "Name",
+                            "col_offset": 12,
+                            "ctx": {
+                                "_type": "Load"
+                            },
+                            "end_col_offset": 13,
+                            "end_lineno": 1,
+                            "id": "s",
+                            "lineno": 1
+                        }
+                    ],
+                    "col_offset": 8,
+                    "end_col_offset": 14,
+                    "end_lineno": 1,
+                    "func": {
+                        "_type": "Name",
+                        "col_offset": 8,
+                        "ctx": {
+                            "_type": "Load"
+                        },
+                        "end_col_offset": 11,
+                        "end_lineno": 1,
+                        "id": "len",
+                        "lineno": 1
+                    },
+                    "keywords": [],
+                    "lineno": 1
+                },
+                "end_col_offset": 38,
+                "end_lineno": 1,
+                "generators": [
+                    {
+                        "_type": "comprehension",
+                        "ifs": [],
+                        "is_async": 0,
+                        "iter": {
+                            "_type": "Call",
+                            "args": [
+                                {
+                                    "_type": "Name",
+                                    "col_offset": 33,
+                                    "ctx": {
+                                        "_type": "Load"
+                                    },
+                                    "end_col_offset": 36,
+                                    "end_lineno": 1,
+                                    "id": "in0",
+                                    "lineno": 1
+                                }
+                            ],
+                            "col_offset": 24,
+                            "end_col_offset": 37,
+                            "end_lineno": 1,
+                            "func": {
+                                "_type": "Name",
+                                "col_offset": 24,
+                                "ctx": {
+                                    "_type": "Load"
+                                },
+                                "end_col_offset": 32,
+                                "end_lineno": 1,
+                                "id": "reversed",
+                                "lineno": 1
+                            },
+                            "keywords": [],
+                            "lineno": 1
+                        },
+                        "target": {
+                            "_type": "Name",
+                            "col_offset": 19,
+                            "ctx": {
+                                "_type": "Store"
+                            },
+                            "end_col_offset": 20,
+                            "end_lineno": 1,
+                            "id": "s",
+                            "lineno": 1
+                        }
+                    }
+                ],
+                "lineno": 1
+            }
+        }
+    ],
+    "type_ignores": []
+}

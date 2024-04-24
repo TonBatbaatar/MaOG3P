@@ -1,0 +1,10 @@
+﻿res0 = True
+x_count = {}
+y_count = {}
+for char in in0:
+    x_count[char] = x_count.get(char, 0) + 1
+for char in in1:
+    y_count[char] = y_count.get(char, 0) + 1
+for char, count in x_count.items():
+    if char not in y_count or y_count[char] < count:
+        res0 = False
